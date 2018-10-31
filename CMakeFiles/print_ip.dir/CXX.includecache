@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/travis/build/otushomework/homework04/main.cpp
+iostream
+-
+vector
+-
+list
+-
+tuple
+-
+type_traits
+-
+

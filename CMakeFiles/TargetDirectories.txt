@@ -1,0 +1,10 @@
+/home/travis/build/otushomework/homework04/CMakeFiles/install/strip.dir
+/home/travis/build/otushomework/homework04/CMakeFiles/install/local.dir
+/home/travis/build/otushomework/homework04/CMakeFiles/install.dir
+/home/travis/build/otushomework/homework04/CMakeFiles/list_install_components.dir
+/home/travis/build/otushomework/homework04/CMakeFiles/rebuild_cache.dir
+/home/travis/build/otushomework/homework04/CMakeFiles/edit_cache.dir
+/home/travis/build/otushomework/homework04/CMakeFiles/print_ip.dir
+/home/travis/build/otushomework/homework04/CMakeFiles/package_source.dir
+/home/travis/build/otushomework/homework04/CMakeFiles/package.dir
+/home/travis/build/otushomework/homework04/CMakeFiles/test.dir
