@@ -10,6 +10,7 @@ before_script:
   - ls
   - gcc --version
   - g++ --version
+  - cmake --version
 script:
   - cmake .
   - cmake --build .
