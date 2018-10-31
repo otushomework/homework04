@@ -4,6 +4,11 @@
 #include <tuple>
 #include <type_traits>
 
+/**
+ * @brief IP в интегральном виде.
+ * @tparam T - любой интегральный тип.
+ * @param ip - значение ip-адреса представленное в интегральном типе.
+ */
 template <typename T>
 typename std::enable_if_t<std::is_integral<T>::value> print_ip(const T& ip)
 {
@@ -11,6 +16,11 @@ typename std::enable_if_t<std::is_integral<T>::value> print_ip(const T& ip)
         std::cout << ((ip >> (8*(i-1))) & 0xff) << (i != 1 ? "." : "");
 }
 
+/**
+ * @brief IP в строковом виде.
+ * @tparam T - тип std::string.
+ * @param ip - значение ip-адреса представленное в виде std::string.
+ */
 template <typename T>
 typename std::enable_if<std::is_same<T, std::string>::value, void>::type
 print_ip(T ip)
@@ -23,6 +33,11 @@ struct is_container : std::false_type { };
 template <typename... Ts> struct is_container<std::list<Ts...> > : std::true_type { };
 template <typename... Ts> struct is_container<std::vector<Ts...> > : std::true_type { };
 
+/**
+ * @brief IP в контейнерном.
+ * @tparam T - контейнерный тип: vactor / list.
+ * @param ip - значение ip-адреса представленное в виде контейнера.
+ */
 template <typename T>
 std::enable_if_t<is_container<T>::value>
 print_ip(const T& ip)
