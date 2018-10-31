@@ -2,6 +2,7 @@
 #include <vector>
 #include <list>
 #include <tuple>
+#include <type_traits>
 
 template <typename T>
 typename std::enable_if_t<std::is_integral<T>::value> print_ip(const T& ip)
@@ -33,10 +34,10 @@ print_ip(const T& ip)
     }
 }
 
-template <typename T>
-struct is_tuple : std::false_type {};
-template <typename... Args>
-struct is_tuple<std::tuple<Args...>> : std::true_type {};
+//template <typename T>
+//struct is_tuple : std::false_type {};
+//template <typename... Args>
+//struct is_tuple<std::tuple<Args...>> : std::true_type {};
 
 int main(int, char *[])
 {
