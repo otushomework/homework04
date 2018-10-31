@@ -4,7 +4,8 @@
 #include <tuple>
 #include <type_traits>
 
-/*! \file */
+/// \file
+/// @file
 
 /**
  * @brief IP в интегральном виде.
