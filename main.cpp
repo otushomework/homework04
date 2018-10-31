@@ -4,6 +4,8 @@
 #include <tuple>
 #include <type_traits>
 
+/*! \file */
+
 /**
  * @brief IP в интегральном виде.
  * @tparam T - любой интегральный тип.
@@ -54,6 +56,9 @@ print_ip(const T& ip)
 //template <typename... Args>
 //struct is_tuple<std::tuple<Args...>> : std::true_type {};
 
+/**
+ * @brief Функция main
+ */
 int main(int, char *[])
 {
     print_ip(char(-1));
