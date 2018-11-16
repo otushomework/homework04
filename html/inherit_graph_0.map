@@ -1,4 +1,5 @@
 <map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
-<area shape="rect" id="node2" href="$structis__container_3_01std_1_1list_3_01Ts_8_8_8_4_01_4.html" title="is_container\&lt; std::\llist\&lt; Ts...\&gt; \&gt;" alt="" coords="131,5,261,46"/>
-<area shape="rect" id="node3" href="$structis__container_3_01std_1_1vector_3_01Ts_8_8_8_4_01_4.html" title="is_container\&lt; std::\lvector\&lt; Ts...\&gt; \&gt;" alt="" coords="131,70,261,111"/>
+<area shape="rect" id="node2" href="$structis__container_3_01std_1_1list_3_01Ts_8_8_8_4_01_4.html" title="is_container\&lt; std::\llist\&lt; Ts...\&gt; \&gt;" alt="" coords="143,5,273,46"/>
+<area shape="rect" id="node3" href="$structis__container_3_01std_1_1vector_3_01Ts_8_8_8_4_01_4.html" title="is_container\&lt; std::\lvector\&lt; Ts...\&gt; \&gt;" alt="" coords="143,70,273,111"/>
+<area shape="rect" id="node4" href="$structis__string_3_01std_1_1string_01_4.html" title="is_string\&lt; std::string \&gt;" alt="" coords="131,136,285,163"/>
 </map>
