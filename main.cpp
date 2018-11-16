@@ -3,6 +3,7 @@
 #include <list>
 #include <tuple>
 #include <type_traits>
+#include <ostream>
 
 /// \file
 /// @file
@@ -19,13 +20,19 @@ typename std::enable_if_t<std::is_integral<T>::value> print_ip(const T& ip)
         std::cout << ((ip >> (8*(i-1))) & 0xff) << (i != 1 ? "." : "");
 }
 
+template <typename T>
+struct is_string : std::false_type { };
+template <> struct is_string<std::string> : std::true_type { };
+
 /**
  * @brief IP в строковом виде.
  * @tparam T - тип std::string.
  * @param ip - значение ip-адреса представленное в виде std::string.
  */
+//template <typename T>
+//typename std::enable_if<std::is_same<T, std::string>::value, void>::type
 template <typename T>
-typename std::enable_if<std::is_same<T, std::string>::value, void>::type
+typename std::enable_if<is_string<T>::value, void>::type
 print_ip(T ip)
 {
     std::cout << ip;
